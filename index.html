@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>history</title>
+<style>
+	body {
+	background-image: url('style/image2.jpeg');
+	background-size: 110%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	text-align: center;
+}
+   .blockone {
+    width: 80%;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    font-size: 1000%;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    border-radius: 30px;
+    box-shadow: 20px 30px 20px rgba(0, 0, 0, 0.7);
+}
+	.iop {
+  	color: white;
+  	text-shadow: 4px 4px 8px black;
+  	font-family: Impact, fantasy;
+}
+    .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    margin: auto;
+    width: 1400px;
+    padding: 20px;
+    border-radius: 40px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.7);
+
+}
+    #countdown {
+    font-size: 24px;
+    font-weight: bold;
+}
+	.blockthree {
+	width: 1500px;
+    height: 70px;
+    margin: auto;
+    display: flex;
+}
+    .box {
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    margin: 7px;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    }
+    .blocktwo {
+    width: 1500px;
+    height: 200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .sandyk {
+    weight: 100%;
+    height: 90px;
+    }
+    .question {
+    display: none;
+    border: 7px solid yellow;
+    background-color: white;
+    border-radius: 30px;
+    width: 80%;
+    height: 100%;
+    padding: 50px;
+    margin: auto;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.8);
+    }
+    .a {
+    color: black;
+    font-size: 120px;
+    }
+    .b {
+    color: black;
+    font-size: 100px;
+    }
+    .timer {
+    font-size: 100px;
+    }
+    .white {
+      color: white;
+    }
+</style>
+</head>
+<body>
+<div class="blockthree"></div>
+<div class="container">
+  <div class="box" data-question="fquestion1"><p class="white">Food and Cooking</p></div>
+  <div class="box" data-question="zquestion1"><p class="white">Art and culture</p></div>
+  <div class="box" data-question="question1"><p class="white">History</p></div>
+  <div class="box" data-question="question1"><p class="white">Science and technology</p></div>
+  <div class="box" data-question="question1"><p class="white">Sports</p></div>
+  <div class="box" data-question="question1"><p class="white">Fashion and style</p></div>
+  <div class="box" data-question="question1"><p class="white">Equipment and cars</p></div>
+  <div class="box" data-question="question1"><p class="white">Health and Medicine</p></div>
+  <div class="box" data-question="question1"><p class="white">Education and Career</p></div>
+  <div class="box" data-question="question1"><p class="white">Travel and tourism</p></div>
+
+  <div class="box" data-question="fquestion1"><img class="sandyk" src="style/chess1.png"></div>
+  <div class="box" data-question="zquestion1"><img class="sandyk" src="style/chess1.png"></div>
+  <div class="box" data-question="hquestion1"><img class="sandyk" src="style/chess1.png"></div>
+  <div class="box" data-question="aquestion1"><img class="sandyk" src="style/chess1.png"></div>
+  <div class="box" data-question="xquestion1"><img class="sandyk" src="style/chess1.png"></div>
+  <div class="box" data-question="tquestion1"><img class="sandyk" src="style/chess1.png"></div>
+  <div class="box" data-question="7question1"><img class="sandyk" src="style/chess1.png"></div>
+  <div class="box" data-question="8question1"><img class="sandyk" src="style/chess1.png"></div>
+  <div class="box" data-question="9question1"><img class="sandyk" src="style/chess1.png"></div>
+  <div class="box" data-question="pquestion1"><img class="sandyk" src="style/chess1.png"></div>
+
+  <div class="box" data-question="fquestion2"><img class="sandyk" src="style/chess2.png"></div>
+  <div class="box" data-question="zquestion2"><img class="sandyk" src="style/chess2.png"></div>
+  <div class="box" data-question="hquestion2"><img class="sandyk" src="style/chess2.png"></div>
+  <div class="box" data-question="aquestion2"><img class="sandyk" src="style/chess2.png"></div>
+  <div class="box" data-question="xquestion2"><img class="sandyk" src="style/chess2.png"></div>
+  <div class="box" data-question="tquestion2"><img class="sandyk" src="style/chess2.png"></div>
+  <div class="box" data-question="7question2"><img class="sandyk" src="style/chess2.png"></div>
+  <div class="box" data-question="8question2"><img class="sandyk" src="style/chess2.png"></div>
+  <div class="box" data-question="9question2"><img class="sandyk" src="style/chess2.png"></div>
+  <div class="box" data-question="pquestion2"><img class="sandyk" src="style/chess2.png"></div>
+
+  <div class="box" data-question="fquestion3"><img class="sandyk" src="style/chess3.png"></div>
+  <div class="box" data-question="zquestion3"><img class="sandyk" src="style/chess3.png"></div>
+  <div class="box" data-question="hquestion3"><img class="sandyk" src="style/chess3.png"></div>
+  <div class="box" data-question="aquestion3"><img class="sandyk" src="style/chess3.png"></div>
+  <div class="box" data-question="xquestion3"><img class="sandyk" src="style/chess3.png"></div>
+  <div class="box" data-question="tquestion3"><img class="sandyk" src="style/chess3.png"></div>
+  <div class="box" data-question="7question3"><img class="sandyk" src="style/chess3.png"></div>
+  <div class="box" data-question="8question3"><img class="sandyk" src="style/chess3.png"></div>
+  <div class="box" data-question="9question3"><img class="sandyk" src="style/chess3.png"></div>
+  <div class="box" data-question="pquestion3"><img class="sandyk" src="style/chess3.png"></div>
+
+  <div class="box" data-question="fquestion4"><img class="sandyk" src="style/chess4.png"></div>
+  <div class="box" data-question="zquestion4"><img class="sandyk" src="style/chess4.png"></div>
+  <div class="box" data-question="hquestion4"><img class="sandyk" src="style/chess4.png"></div>
+  <div class="box" data-question="aquestion4"><img class="sandyk" src="style/chess4.png"></div>
+  <div class="box" data-question="xquestion4"><img class="sandyk" src="style/chess4.png"></div>
+  <div class="box" data-question="tquestion4"><img class="sandyk" src="style/chess4.png"></div>
+  <div class="box" data-question="7question4"><img class="sandyk" src="style/chess4.png"></div>
+  <div class="box" data-question="8question4"><img class="sandyk" src="style/chess4.png"></div>
+  <div class="box" data-question="9question4"><img class="sandyk" src="style/chess4.png"></div>
+  <div class="box" data-question="pquestion4"><img class="sandyk" src="style/chess4.png"></div>
+
+  <div class="box" data-question="fquestion5"><img class="sandyk" src="style/chess5.png"></div>
+  <div class="box" data-question="zquestion5"><img class="sandyk" src="style/chess5.png"></div>
+  <div class="box" data-question="hquestion5"><img class="sandyk" src="style/chess5.png"></div>
+  <div class="box" data-question="aquestion5"><img class="sandyk" src="style/chess5.png"></div>
+  <div class="box" data-question="xquestion5"><img class="sandyk" src="style/chess5.png"></div>
+  <div class="box" data-question="tquestion5"><img class="sandyk" src="style/chess5.png"></div>
+  <div class="box" data-question="7question5"><img class="sandyk" src="style/chess5.png"></div>
+  <div class="box" data-question="8question5"><img class="sandyk" src="style/chess5.png"></div>
+  <div class="box" data-question="9question5"><img class="sandyk" src="style/chess5.png"></div>
+  <div class="box" data-question="pquestion5"><img class="sandyk" src="style/chess5.png"></div>
+
+</div>
+<div class="blockthree"></div>
+<div>
+  <div id="fquestion1" class="question">
+    <h2 class="a">Сандық 1</h2>
+    <p class="b">What traditional dishes are typical for Italian cuisine?</p>
+  </div>
+  <div id="fquestion2" class="question">
+    <h2 class="a">Сандық 2</h2>
+    <p class="b">What is the difference between Mexican and Spanish cuisine?</p>
+  </div>
+  <div id="fquestion3" class="question">
+    <h2 class="a">Сандық 3</h2>
+    <p class="b">What ingredients are necessarily used in Japanese cuisine?</p>
+  </div>
+  <div id="fquestion4" class="question">
+    <h2 class="a">Сандық 4</h2>
+    <p class="b">What dishes are considered national for Russia?</p>
+  </div>
+  <div id="fquestion5" class="question">
+    <h2 class="a">Сандық 5</h2>
+    <p class="b">What cooking methods can be considered healthy?</p>
+  </div>
+
+  <div id="zquestion1" class="question">
+    <h2 class="a">Сандық 1</h2>
+    <p class="b">What schools of painting were characteristic of the Renaissance?</p>
+  </div>
+  <div id="zquestion2" class="question">
+    <h2 class="a">Сандық 2</h2>
+    <p class="b">What musical genres became popular in the 20th century?</p>
+  </div>
+  <div id="zquestion3" class="question">
+    <h2 class="a">Сандық 3</h2>
+    <p class="b">What theatrical productions are considered classics of world drama?</p>
+  </div>
+  <div id="zquestion4" class="question">
+    <h2 class="a">Сандық 4</h2>
+    <p class="b">What areas of contemporary art arouse the greatest interest?</p>
+  </div>
+  <div id="zquestion5" class="question">
+    <h2 class="a">Сандық 5</h2>
+    <p class="b">What books have become bestsellers in recent years?</p>
+  </div>
+
+  <div id="hquestion1" class="question">
+    <h2 class="a">Сандық 1</h2>
+    <p class="b">What events led to the outbreak of the First World War?</p>
+  </div>
+  <div id="hquestion2" class="question">
+    <h2 class="a">Сандық 2</h2>
+    <p class="b">Which historical figures had the greatest influence on the course of world history?</p>
+  </div>
+  <div id="hquestion3" class="question">
+    <h2 class="a">Сандық 3</h2>
+    <p class="b">What cultural and scientific achievements are considered important for humanity?</p>
+  </div>
+  <div id="hquestion4" class="question">
+    <h2 class="a">Сандық 4</h2>
+    <p class="b">What periods are considered the golden age for various civilizations?</p>
+  </div>
+  <div id="hquestion5" class="question">
+    <h2 class="a">Сандық 5</h2>
+    <p class="b">What changes have occurred in the political picture of the world after World War II?</p>
+  </div>
+
+  <div id="aquestion1" class="question">
+    <h2 class="a">Сандық 1</h2>
+    <p class="b">What inventions had the greatest impact on the development of mankind?</p>
+  </div>
+  <div id="aquestion2" class="question">
+    <h2 class="a">Сандық 2</h2>
+    <p class="b">What technologies are considered key for the future?</p>
+  </div>
+  <div id="aquestion3" class="question">
+    <h2 class="a">Сандық 3</h2>
+    <p class="b">What scientific discoveries have become a turning point in our understanding of the world?</p>
+  </div>
+  <div id="aquestion4" class="question">
+    <h2 class="a">Сандық 4</h2>
+    <p class="b">What problems of modern science require the greatest attention?</p>
+  </div>
+  <div id="aquestion5" class="question">
+    <h2 class="a">Сандық 5</h2>
+    <p class="b">What achievements of the space industry are of the greatest interest?</p>
+  </div>
+
+  <div id="xquestion1" class="question">
+    <h2 class="a">Сандық 1</h2>
+    <p class="b">What sports are popular in different countries?</p>
+  </div>
+  <div id="xquestion2" class="question">
+    <h2 class="a">Сандық 2</h2>
+    <p class="b">What sporting events are considered the most prestigious?</p>
+  </div>
+  <div id="xquestion3" class="question">
+    <h2 class="a">Сандық 3</h2>
+    <p class="b">What sports records have been set in recent years?</p>
+  </div>
+  <div id="xquestion4" class="question">
+    <h2 class="a">Сандық 4</h2>
+    <p class="b">What trends can be identified in the development of sports in the world?</p>
+  </div>
+  <div id="xquestion5" class="question">
+    <h2 class="a">Сандық 5</h2>
+    <p class="b">Which sports personalities are considered icons in their disciplines?</p>
+  </div>
+
+  <div id="tquestion1" class="question">
+    <h2 class="a">Сандық 1</h2>
+    <p class="b">Which clothing brands are the most popular in the world?</p>
+  </div>
+  <div id="tquestion2" class="question">
+    <h2 class="a">Сандық 2</h2>
+    <p class="b">What fashion trends are gaining popularity this season?</p>
+  </div>
+  <div id="tquestion3" class="question">
+    <h2 class="a">Сандық 3</h2>
+    <p class="b">What accessories are considered important to complete the look?</p>
+  </div>
+  <div id="tquestion4" class="question">
+    <h2 class="a">Сандық 4</h2>
+    <p class="b">What historical periods influenced the development of fashion?</p>
+  </div>
+  <div id="tquestion5" class="question">
+    <h2 class="a">Сандық 5</h2>
+    <p class="b">Which countries are leaders in the fashion industry?</p>
+  </div>
+
+  <div id="7question1" class="question">
+    <h2 class="a">Сандық 1</h2>
+    <p class="b">Which automobile companies are considered the most innovative?</p>
+  </div>
+  <div id="7question2" class="question">
+    <h2 class="a">Сандық 2</h2>
+    <p class="b">What technologies are used in modern smartphones?</p>
+  </div>
+  <div id="7question3" class="question">
+    <h2 class="a">Сандық 3</h2>
+    <p class="b">What trends can be identified in the development of computer technology?</p>
+  </div>
+  <div id="7question4" class="question">
+    <h2 class="a">Сандық 4</h2>
+    <p class="b">What energy sources are becoming increasingly popular for cars?</p>
+  </div>
+  <div id="7question5" class="question">
+    <h2 class="a">Сандық 5</h2>
+    <p class="b">What new technologies make everyday life easier?</p>
+  </div>
+
+  <div id="8question1" class="question">
+    <h2 class="a">Сандық 1</h2>
+    <p class="b">What factors influence human health?</p>
+  </div>
+  <div id="8question2" class="question">
+    <h2 class="a">Сандық 2</h2>
+    <p class="b">What diseases are considered the most common in the world?</p>
+  </div>
+  <div id="8question3" class="question">
+    <h2 class="a">Сандық 3</h2>
+    <p class="b">What treatment methods have become the most effective recently?</p>
+  </div>
+  <div id="8question4" class="question">
+    <h2 class="a">Сандық 4</h2>
+    <p class="b">What new technologies are used in medicine for diagnosis and treatment?</p>
+  </div>
+  <div id="8question5" class="question">
+    <h2 class="a">Сандық 5</h2>
+    <p class="b">Which areas of medicine expect the greatest development in the future?</p>
+  </div>
+
+  <div id="9question1" class="question">
+    <h2 class="a">Сандық 1</h2>
+    <p class="b">What professions will be in demand in the future?</p>
+  </div>
+  <div id="9question2" class="question">
+    <h2 class="a">Сандық 2</h2>
+    <p class="b">Which educational programs are considered the most prestigious?</p>
+  </div>
+  <div id="9question3" class="question">
+    <h2 class="a">Сандық 3</h2>
+    <p class="b">What skills are needed for a successful career in the modern world?</p>
+  </div>
+  <div id="9question4" class="question">
+    <h2 class="a">Сандық 4</h2>
+    <p class="b">What trends can be identified in the educational sphere?</p>
+  </div>
+  <div id="9question5" class="question">
+    <h2 class="a">Сандық 5</h2>
+    <p class="b">What strategies help you achieve success in school and work?</p>
+  </div>
+
+  <div id="pquestion1" class="question">
+    <h2 class="a">Сандық 1</h2>
+    <p class="b">Which countries are considered the most
+    popular tourist destinations?</p>
+  </div>
+  <div id="pquestion2" class="question">
+    <h2 class="a">Сандық 2</h2>
+    <p class="b">Which attractions attract the most tourists?</p>
+  </div>
+  <div id="pquestion3" class="question">
+    <h2 class="a">Сандық 3</h2>
+    <p class="b">What cultural features should be taken into account when traveling to different countries?</p>
+  </div>
+  <div id="pquestion4" class="question">
+    <h2 class="a">Сандық 4</h2>
+    <p class="b">What types of recreation are becoming the most popular among tourists?</p>
+  </div>
+  <div id="pquestion5" class="question">
+    <h2 class="a">Сандық 5</h2>
+    <p class="b">What problems and challenges does the modern tourism industry face?</p>
+  </div>
+</div>
+<div class="blocktwo"></div>
+
+<audio id="audio" src="style/capcap2.mp3"></audio>
+<script>
+    let currentQuestion = null;
+    let timerInterval = null; // Переменная для хранения интервала таймера
+    let audio = document.getElementById('audio');
+
+    const boxes = document.querySelectorAll('.box');
+
+    boxes.forEach(box => {
+        box.addEventListener('click', () => {
+            const questionId = box.getAttribute('data-question');
+            const question = document.getElementById(questionId);
+            if (question) {
+                if (currentQuestion) {
+                    currentQuestion.style.display = 'none'; // Скрыть предыдущий вопрос
+                    clearInterval(timerInterval); // Остановить таймер при закрытии вопроса
+                    audio.pause(); // Остановить воспроизведение звука
+                    audio.currentTime = 0; // Сбросить время воспроизведения звука
+                }
+                // Показываем блок с вопросом
+                question.style.display = 'block';
+                currentQuestion = question; // Обновляем текущий вопрос
+                // Скрываем блок с боксом
+              
+                // Создаем и запускаем таймер
+                const timerElement = document.createElement('div');
+                timerElement.classList.add('timer');
+                timerElement.textContent = '01:00'; // Изначальное значение таймера
+                question.appendChild(timerElement);
+                startTimer(60, timerElement, () => { // Добавляем колбэк, который будет вызван при завершении таймера
+                    handleTimeout();
+                });
+                // Воспроизводим аудиофайл
+                audio.play();
+                // Добавляем кнопку "Ответить"
+                const answerButton = document.createElement('button');
+                answerButton.textContent = 'Жауап беру';
+                answerButton.addEventListener('click', () => {
+                    handleAnswer(timerElement);
+                });
+                question.appendChild(answerButton);
+            }
+        });
+    });
+
+    function startTimer(duration, timerElement, onTimerEnd) {
+        let timer = duration, minutes, seconds;
+
+        timerInterval = setInterval(function () {
+            minutes = parseInt(timer / 60, 10);
+            seconds = parseInt(timer % 60, 10);
+
+            minutes = minutes < 10 ? '0' + minutes : minutes;
+            seconds = seconds < 10 ? '0' + seconds : seconds;
+
+            timerElement.textContent = minutes + ':' + seconds;
+
+            if (--timer < 0) {
+                clearInterval(timerInterval);
+                timerElement.textContent = 'Уақыт аяқталды!';
+                onTimerEnd(); // Вызываем колбэк при завершении времени
+            }
+        }, 1000);
+    }
+
+    function handleAnswer(timerElement) {
+        clearInterval(timerInterval); // Остановить таймер
+        timerElement.textContent = 'Жауап қабылданды!'; // Изменить текст таймера
+        const answerButton = currentQuestion.querySelector('button'); // Найти кнопку "Ответить"
+        answerButton.disabled = true; // Отключить кнопку "Ответить"
+        audio.pause(); // Остановить воспроизведение звука
+        audio.currentTime = 0; // Сбросить время воспроизведения звука
+
+        // Показать кнопку "Показать ответы"
+        
+        currentQuestion.appendChild(showAnswersButton);
+    }
+    // Добавляем кнопку "Показать ответы" после кнопки "Жауап беру"
+const showAnswerButton = document.createElement('button');
+showAnswerButton.textContent = 'Показать ответы';
+showAnswerButton.addEventListener('click', () => {
+    showAnswers();
+});
+currentQuestion.appendChild(showAnswerButton);
+
+function showAnswers() {
+    const answers = currentQuestion.querySelectorAll('.answer');
+    answers.forEach(answer => {
+        answer.style.display = 'block'; // Показываем блок с ответом
+    });
+    showAnswerButton.style.display = 'none'; // Скрываем кнопку "Показать ответы"
+}
+</script>
+
+</body>
+</html>
